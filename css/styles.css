@@ -1,0 +1,246 @@
+/* колір основного тексту #757575 */
+/* колір вторинного тексту #212121 */
+/* білий колір  #FFFFFF */
+/* акцент #2196F3 */
+/* чорний лого #000000 */
+/* вторинний білий колір rgba(255, 255, 255, 0.6) */
+/* вторинний фон #F5F4FA */
+/* фон героя та футера #2F303A */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+  --order-button-color: #188ce8;
+  --secondary-background-color: #f5f4fa;
+  --footer-background-color: #2f303a;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Logo */
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  text-decoration: none;
+}
+
+.logo-header {
+  color: var(--primary-black-color);
+}
+
+.logo-footer {
+  color: var(--primary-white-color);
+}
+
+/* Navigation */
+
+.nav-list .current {
+  color: var(--accent-color);
+}
+
+.nav-item {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--accent-color);
+}
+
+/* Contacts */
+
+.contacts-item {
+  color: inherit;
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--footer-background-color);
+  /* (фон тимчасовий) */
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Section */
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+/* Hidden title */
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Features */
+
+.features-title {
+  color: var(--title-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.features-text {
+  line-height: calc(24 / 14);
+}
+
+/* Specifications */
+
+/* Team */
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.teammate,
+.teammate-position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+.teammate {
+  color: var(--title-text-color);
+  font-weight: 500;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--footer-background-color);
+}
+
+.address {
+  color: var(--primary-white-color);
+  line-height: calc(24 / 14);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.email,
+.number {
+  color: var(--footer-contacts-color);
+  line-height: calc(24 / 14);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address:hover,
+.address:focus,
+.email:hover,
+.email:focus,
+.number:hover,
+.number:focus {
+  color: var(--accent-color);
+  /* на макеті не зазначено на який колір повині змінюватися контакти */
+}
+
+/* Buttons */
+
+.button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.order-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.order-button:hover {
+  background-color: var(--order-button-color);
+}
+
+.filter-button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Examples */
+
+.example-title {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  color: var(--title-text-color);
+}
+
+.example-type {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
