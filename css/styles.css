@@ -8,3 +8,13 @@
   max-width: 255px;
   width: 250px;
 }
+
+.image {
+  width: 1400px;
+  height: 1400px;
+ display: inline-flex;
+    border: 11px solid red;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
