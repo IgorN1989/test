@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,30 +15,28 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Test test -->
-    <div class="box">
-      <ul class="customers__list">
-        <li class="customers__item">
-          <svg class="star" width="100" height="16">
-            <use></use>
-          </svg>
-          <p class="customers__text">
-            “The Best app I have used to order food in a while, so many options to choose from too,
-            I would recommend to a freind, No questions asked”
-          </p>
-        </li>
-        <li class="customers__item">
-          <svg class="star" width="100" height="16">
-            <use></use>
-          </svg>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-          <p class="customers__text">
-            “The ease with which I can just go in and order what i want was amazing, It has been a
-            very pleasant experience ordering from this app”
-          </p>
-        </li>
-      </ul>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
     </div>
+    Swiper CSS Styles/Size
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
-,
